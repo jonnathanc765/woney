@@ -6,6 +6,7 @@
     addDots() {
       this.dots = document.createElement('div');
       this.dots.classList.add('dots');
+      this.dots.classList.add('row');
 
       for(let i = 0; i < this.innerElements.length; i++) {
         const dot = document.createElement('button');
@@ -32,11 +33,9 @@
       this.addDots();
       this.updateDots();
     },
-
     onChange: function(){
       this.updateDots()
     },
-    selector: '.siema',
     duration: 200,
     easing: 'ease-out',
     loop: true
@@ -44,18 +43,13 @@
 
   const services = new SiemaWithDots({
     selector: '.siema-services',
-    onInit: function(){
+    onInit: function () {
       this.addDots();
       this.updateDots();
     },
-
-    onChange: function(){
-      this.updateDots()
+    onChange: function () {
+      this.updateDots
     },
-    selector: '.siema',
-    duration: 200,
-    easing: 'ease-out',
-    loop: true
   });
 
 
