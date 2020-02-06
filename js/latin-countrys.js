@@ -892,7 +892,8 @@ var statesData ={
      },
      { 
         "type":"Feature",
-        "properties":{ 
+        "properties":{
+          "density": 125357000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
@@ -1649,6 +1650,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "density": 30000000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":3,
@@ -2093,6 +2095,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "density": 49737000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
@@ -2569,6 +2572,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "density": 44723000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
@@ -3135,6 +3139,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "density": 6675000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":6,
@@ -3291,7 +3296,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 33362000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
            "sovereignt":"Peru",
@@ -3671,7 +3677,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 9087000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":5,
            "sovereignt":"Honduras",
@@ -3975,7 +3982,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 6494000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":5,
            "sovereignt":"Nicaragua",
@@ -4259,7 +4267,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 210461000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":4,
            "sovereignt":"Paraguay",
@@ -4467,7 +4476,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 18880000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
            "sovereignt":"Chile",
@@ -5005,7 +5015,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 17545000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":3,
            "sovereignt":"Guatemala",
@@ -5221,7 +5232,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 4190000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":4,
            "sovereignt":"Panama",
@@ -5505,6 +5517,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "density": 5032000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":5,
@@ -5725,7 +5738,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 3512000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":4,
            "sovereignt":"Uruguay",
@@ -5885,7 +5899,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 17170000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":3,
            "sovereignt":"Ecuador",
@@ -6093,7 +6108,8 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
-           "scalerank":1,
+          "density": 10315000,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":5,
            "sovereignt":"Dominican Republic",
