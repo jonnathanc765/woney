@@ -1,3 +1,11 @@
+$orange: #E19630;
+$indigo: #D35F40;
+$blue: #60A9B9;
+
+.mb-4 {
+  margin-bottom: 4rem!important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -39,6 +47,7 @@ body {
   background: #fff;
 }
 
-@import 'header'
+@import 'header';
+@import 'about-us';
 
   
