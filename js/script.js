@@ -1,6 +1,4 @@
 
-  M.AutoInit();
-
   class SiemaWithDots extends Siema {
 
     addDots() {
@@ -27,29 +25,32 @@
     }
   }
 
-  const slider = new SiemaWithDots({
-    selector: '.siema-slider',
-    onInit: function(){
-      this.addDots();
-      this.updateDots();
-    },
-    onChange: function(){
-      this.updateDots()
-    },
-    duration: 200,
-    easing: 'ease-out',
-    loop: true
-  });
 
-  const services = new SiemaWithDots({
-    selector: '.siema-services',
-    onInit: function () {
-      this.addDots();
-      this.updateDots();
-    },
-    onChange: function () {
-      this.updateDots
-    },
-  });
+    const slider = new SiemaWithDots({
+      selector: '.siema-slider',
+      onInit: function(){
+        this.addDots();
+        this.updateDots();
+      },
+      onChange: function(){
+        this.updateDots()
+      },
+      duration: 200,
+      easing: 'ease-out',
+      loop: true
+    });
+
+    M.AutoInit();
+
+    const services = new SiemaWithDots({
+      selector: '.siema-services',
+      onInit: function () {
+        this.addDots();
+        this.updateDots();
+      },
+      onChange: function () {
+        this.updateDots
+      },
+    });
 
 
