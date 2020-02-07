@@ -1,0 +1,36 @@
+.benefits {
+    background-color: $light-blue;
+    padding: 40px 0;
+    h2 {
+        font-size: 38px;
+        font-weight: 800;
+        text-align: center;
+        color: $blue;
+    }
+    .s12 {
+        .row {
+            padding-left: 50px;
+        }
+    } 
+        
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            padding-left: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 24px 0px;
+            &:before {
+                content: "\f00c"; /* FontAwesome Unicode */
+                font-family: FontAwesome;
+                display: inline-block;
+                margin-left: -1.3em; /* same as padding-left set on li */
+                width: 1.3em; /* same as padding-left set on li */
+                font-size: 20px;
+                color: $orange;
+            }
+
+        }
+    }
+}

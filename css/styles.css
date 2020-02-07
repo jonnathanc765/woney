@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mb-4 {
   margin-bottom: 4rem !important;
 }
@@ -280,6 +281,42 @@ header .dots__item {
   font-weight: 800;
   font-size: 40px;
   color: #333333;
+}
+
+.benefits {
+  background-color: #e5e6e7;
+  padding: 40px 0;
+}
+.benefits h2 {
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  color: #60A9B9;
+}
+.benefits .s12 .row {
+  padding-left: 50px;
+}
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+.benefits ul li {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 24px 0px;
+}
+.benefits ul li:before {
+  content: "";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */
+  font-size: 20px;
+  color: #E19630;
 }
 
 /*# sourceMappingURL=styles.css.map */
