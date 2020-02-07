@@ -284,14 +284,16 @@ header .dots__item {
 }
 
 .benefits {
+  position: relative;
   background-color: #e5e6e7;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
 }
 .benefits h2 {
   font-size: 38px;
   font-weight: 800;
   text-align: center;
   color: #60A9B9;
+  text-transform: uppercase;
 }
 .benefits .s12 .row {
   padding-left: 50px;
@@ -308,6 +310,59 @@ header .dots__item {
 }
 .benefits ul li:before {
   content: "";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */
+  font-size: 20px;
+  color: #E19630;
+}
+.benefits .stain-container {
+  position: relative;
+}
+.benefits .stain-container .stain {
+  position: absolute;
+  width: 500px;
+  left: -100%;
+}
+
+.countries {
+  padding: 5px 0;
+}
+.countries .container {
+  width: 100%;
+  max-width: 996px;
+}
+.countries h2 {
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #E19630;
+  margin: 5px 0;
+}
+.countries p {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.countries .s3 {
+  margin-top: 30px;
+}
+.countries ul {
+  list-style: none;
+  padding: 0;
+}
+.countries ul li {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.countries ul li:before {
+  content: "";
   /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
