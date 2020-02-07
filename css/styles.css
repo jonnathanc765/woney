@@ -15,29 +15,6 @@ body {
   margin: 1rem 0;
 }
 
-.dots {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-}
-
-.dots__item {
-  width: 15px;
-  height: 15px;
-  margin: 0 0.5rem;
-  border: 0;
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  outline: 0;
-  cursor: pointer;
-}
-
 .dots__item--active {
   background: #fff;
 }
@@ -87,11 +64,32 @@ header .nav-logo {
 header .siema-slider img {
   width: 100%;
 }
+header .dots {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+header .dots__item {
+  width: 15px;
+  height: 15px;
+  margin: 0 0.5rem;
+  border: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+}
 
 .about-us {
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: #d5e3ec;
+  background-color: #e5e6e7;
 }
 .about-us .row {
   display: flex;
@@ -133,6 +131,144 @@ header .siema-slider img {
   border-radius: 15px;
   font-weight: 800;
   font-size: 18px;
+}
+.about-us .dots {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.about-us .dots__item {
+  width: 15px;
+  height: 15px;
+  margin: 0 0.5rem;
+  border: 0;
+  background-color: transparent;
+  border: 2px solid #D35F40;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+}
+.about-us .dots__item--active {
+  background: #D35F40;
+}
+
+.services {
+  background-color: #e5e6e7;
+  padding: 30px 0 30px 0;
+}
+.services > .container {
+  width: 100%;
+  max-width: 960px;
+}
+.services .l12 > .card {
+  border-radius: 45px;
+  -webkit-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
+}
+.services .l12 > .card h2 {
+  color: #60A9B9;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.services .l12 > .card h4 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #60A9B9;
+}
+.services .l12 > .card .card {
+  border: none;
+  box-shadow: none;
+}
+.services .l12 > .card .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .l12 > .card .card .card-content img {
+  width: 70%;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.services .l12 > .card .card .card-content h4 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.services .l12 > .card .card .card-content p {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.team .container {
+  width: 100%;
+  max-width: 996px;
+}
+.team .container .bg-blue {
+  background-color: #60A9B9;
+}
+.team .container .bg-indigo {
+  background-color: #D35F40;
+}
+.team .container .bg-orange {
+  background-color: #E19630;
+}
+.team .container > .row > .col {
+  position: relative;
+  padding: 0;
+  padding-top: 100px;
+  min-height: 710px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.team .container > .row > .col h3, .team .container > .row > .col h4, .team .container > .row > .col p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.team .container > .row > .col h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.team .container > .row > .col h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.team .container > .row > .col p {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  min-height: 180px;
+}
+.team .container > .row > .col .title-text {
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.team .container > .row > .col .title-text h2, .team .container > .row > .col .title-text h3 {
+  text-align: center;
+  color: #fff;
+}
+.team .container > .row > .col .title-text h2 {
+  font-size: 35px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
