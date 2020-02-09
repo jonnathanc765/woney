@@ -6,7 +6,6 @@
         id: 'mapbox/light-v9'
     }).addTo(map);
 
-
     // control that shows state info on hover
     var info = L.control();
 

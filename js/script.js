@@ -42,15 +42,4 @@
 
     M.AutoInit();
 
-    const services = new SiemaWithDots({
-      selector: '.siema-services',
-      onInit: function () {
-        this.addDots();
-        this.updateDots();
-      },
-      onChange: function () {
-        this.updateDots
-      },
-    });
-
 
