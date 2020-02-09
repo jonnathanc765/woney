@@ -1,0 +1,52 @@
+footer {
+    background-color: $indigo;
+    color: #fff;
+    padding: 35px 0;
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .links {
+        ul {
+            list-style: square;
+            li {
+                font-size: 18px;
+                &:before {
+                    content: "\f0c8"; /* FontAwesome Unicode */
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    margin-left: -1.3em; /* same as padding-left set on li */
+                    width: 1.3em; /* same as padding-left set on li */
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .social {
+        ul {
+            li {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 0;
+                span {
+                    font-size: 22px;
+                }
+                div {
+                    margin-left: 18px;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

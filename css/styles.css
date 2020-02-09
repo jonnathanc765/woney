@@ -358,6 +358,7 @@ header {
     font-size: 16px;
     font-weight: 500; }
   .contact .card {
+    border-radius: 15px;
     -webkit-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75); }
@@ -383,3 +384,42 @@ header {
       min-width: 100%;
       max-height: 100px;
       min-height: 60px; }
+
+footer {
+  background-color: #D35F40;
+  color: #fff;
+  padding: 35px 0; }
+  footer h4 {
+    font-size: 18px;
+    font-weight: 400; }
+  footer .links ul {
+    list-style: square; }
+    footer .links ul li {
+      font-size: 18px; }
+      footer .links ul li:before {
+        content: "\f0c8";
+        /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em;
+        /* same as padding-left set on li */
+        width: 1.3em;
+        /* same as padding-left set on li */
+        font-size: 14px;
+        color: #fff; }
+    footer .links ul a {
+      color: #fff;
+      text-decoration: none; }
+      footer .links ul a:hover {
+        color: #fff;
+        text-decoration: none; }
+  footer .social ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0; }
+    footer .social ul li span {
+      font-size: 22px; }
+    footer .social ul li div {
+      margin-left: 18px; }
+      footer .social ul li div a {
+        color: #fff; }
