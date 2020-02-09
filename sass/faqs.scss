@@ -1,9 +1,9 @@
 .faqs {
     .container {
         > .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
         }
     }
     background-color: $blue;
@@ -48,6 +48,25 @@
             border: none;
             p {
                 text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .faqs {
+        .collapsible {
+            .collapsible-header {
+                justify-content: center;
+                p {
+                    text-align: center;
+                }
+            }
+            .collapsible-body {
+                justify-content: center;
+                p {
+                    text-align: center;
+                }
             }
         }
     }

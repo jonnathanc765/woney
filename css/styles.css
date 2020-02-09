@@ -192,6 +192,9 @@ header {
     display: flex;
     justify-content: flex-end;
     flex-direction: column; }
+    @media screen and (max-width: 767px) {
+      .team .container > .row > .col {
+        padding-top: 10px; } }
     .team .container > .row > .col h3, .team .container > .row > .col h4, .team .container > .row > .col p {
       color: #fff;
       text-align: center;
@@ -217,6 +220,11 @@ header {
       margin-right: auto;
       left: 0;
       right: 0; }
+      @media screen and (max-width: 767px) {
+        .team .container > .row > .col .title-text {
+          display: none; }
+          .team .container > .row > .col .title-text.responsive {
+            display: block; } }
       .team .container > .row > .col .title-text h2, .team .container > .row > .col .title-text h3 {
         text-align: center;
         color: #fff; }
@@ -245,6 +253,9 @@ header {
     text-transform: uppercase; }
   .benefits .s12 .row {
     padding-left: 50px; }
+    @media screen and (max-width: 767px) {
+      .benefits .s12 .row {
+        padding-left: 10px; } }
   .benefits ul {
     list-style: none;
     padding: 0; }
@@ -253,6 +264,9 @@ header {
       font-size: 15px;
       font-weight: 600;
       margin: 24px 0px; }
+      @media screen and (max-width: 767px) {
+        .benefits ul li {
+          padding-left: 0px; } }
       .benefits ul li:before {
         content: "\f00c";
         /* FontAwesome Unicode */
@@ -270,6 +284,10 @@ header {
       position: absolute;
       width: 500px;
       left: -100%; }
+      @media screen and (max-width: 767px) {
+        .benefits .stain-container .stain {
+          left: -60%;
+          position: relative; } }
 
 .countries {
   padding: 5px 0; }
@@ -291,6 +309,9 @@ header {
   .countries ul {
     list-style: none;
     padding: 0; }
+    @media screen and (max-width: 992px) {
+      .countries ul {
+        padding-left: 35px; } }
     .countries ul li {
       padding-left: 10px;
       font-size: 20px;
@@ -307,14 +328,14 @@ header {
         /* same as padding-left set on li */
         font-size: 20px;
         color: #E19630; }
+  .countries .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .faqs {
   background-color: #60A9B9;
   padding: 30px 0; }
-  .faqs .container > .row {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .faqs .image-container {
     display: flex;
     justify-content: center;
@@ -348,6 +369,16 @@ header {
       .faqs .collapsible .collapsible-body p {
         text-align: right; }
 
+@media screen and (max-width: 767px) {
+  .faqs .collapsible .collapsible-header {
+    justify-content: center; }
+    .faqs .collapsible .collapsible-header p {
+      text-align: center; }
+  .faqs .collapsible .collapsible-body {
+    justify-content: center; }
+    .faqs .collapsible .collapsible-body p {
+      text-align: center; } }
+
 .contact {
   padding: 50px 0; }
   .contact h2, .contact p {
@@ -355,6 +386,9 @@ header {
   .contact h2 {
     font-weight: 800;
     margin: 0; }
+    @media screen and (max-width: 767px) {
+      .contact h2 {
+        font-size: 40px; } }
   .contact p {
     margin: 0;
     font-size: 16px;

@@ -12,6 +12,9 @@
     .s12 {
         .row {
             padding-left: 50px;
+            @media screen and (max-width: 767px) {
+                padding-left: 10px;
+            }
         }
     } 
         
@@ -23,6 +26,9 @@
             font-size: 15px;
             font-weight: 600;
             margin: 24px 0px;
+            @media screen and (max-width: 767px){
+                padding-left: 0px;
+            }
             &:before {
                 content: "\f00c"; /* FontAwesome Unicode */
                 font-family: FontAwesome;
@@ -37,10 +43,15 @@
     }
     .stain-container {
         position: relative;
+        
         .stain {
             position: absolute;
             width: 500px;
             left: -100%;
+            @media screen and (max-width: 767px ){
+                left: -60%;
+                position: relative;
+            }
         }
     }
    
