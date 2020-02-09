@@ -41,5 +41,7 @@
     });
 
     M.AutoInit();
+    
+    var scroll = new SmoothScroll('a[href*="#"]');
 
 

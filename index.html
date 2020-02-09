@@ -20,31 +20,31 @@
 
     <ul id="slide-out" class="sidenav">
 
-        <li class="menu-sidenav-icon"><a href="#!"class="sidenav-close"><img src="img/sidebar-icons/menu-bars.png" alt=""></i></a></li>
+        <li class="menu-sidenav-icon"><a href="#!" class="sidenav-close"><img src="img/sidebar-icons/menu-bars.png" alt=""></i></a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/woney.png" alt=""></i>Woney</a></li>
+        <li><a class="sidenav-close" href="#woney" data-scroll><img src="img/sidebar-icons/woney.png" alt=""></i>Woney</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/coin.png" alt=""></i>Servicios</a></li>
+        <li><a class="sidenav-close" href="#services" data-scroll><img src="img/sidebar-icons/coin.png" alt=""></i>Servicios</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/people.png" alt=""></i>Quienes Somos</a></li>
+        <li><a class="sidenav-close" href="#about-us" data-scroll><img src="img/sidebar-icons/people.png" alt=""></i>Quienes Somos</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/wallet.png" alt=""></i>Procesos del Wallet</a></li>
+        <li><a class="sidenav-close" href="#proccess" data-scroll><img src="img/sidebar-icons/wallet.png" alt=""></i>Procesos del Wallet</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/bars.png" alt=""></i>Beneficios</a></li>
+        <li><a class="sidenav-close" href="#benefits" data-scroll><img src="img/sidebar-icons/bars.png" alt=""></i>Beneficios</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/map.png" alt=""></i>Paises</a></li>
+        <li><a class="sidenav-close" href="#countries" data-scroll><img src="img/sidebar-icons/map.png" alt=""></i>Paises</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/help.png" alt=""></i>Preguntas Frecuentes</a></li>
+        <li><a class="sidenav-close" href="#faqs" data-scroll><img src="img/sidebar-icons/help.png" alt=""></i>Preguntas Frecuentes</a></li>
         <li><div class="divider"></div></li>
 
-        <li><a href="#!"><img src="img/sidebar-icons/envelop.png" alt=""></i>Contáctanos</a></li>
+        <li><a class="sidenav-close" href="#contact" data-scroll><img src="img/sidebar-icons/envelop.png" alt=""></i>Contáctanos</a></li>
         <li><div class="divider"></div></li>
     </ul>
 
@@ -68,7 +68,7 @@
 
     <main>
 
-        <section class="about-us">
+        <section class="about-us" id="woney">
 
             <div class="container">
                 <div class="row">
@@ -97,7 +97,7 @@
 
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
 
             <div class="container">
                 <div class="row">
@@ -160,7 +160,7 @@
 
         </section>
 
-        <section class="team">
+        <section class="team" id="about-us">
 
             <div class="container">
                 <div class="row">
@@ -210,7 +210,7 @@
 
         </section>
 
-        <section class="proccess">
+        <section class="proccess" id="proccess">
             
             <div class="row">
                 <h2>PROCESO DE USO</h2>
@@ -221,7 +221,7 @@
 
         </section>
 
-        <section class="benefits">
+        <section class="benefits" id="benefits">
 
             
 
@@ -284,7 +284,7 @@
 
         </section>
 
-        <section class="countries">
+        <section class="countries" id="countries">
             
             <div class="container">
                 <div class="row">
@@ -322,14 +322,14 @@
                             <li>Venezuela <span> 30.000.000</span></li>
                         </ul>
                     </div>
-                    <div class="col s12 12 l5 map-container" style="height: 600px;">
+                    <div class="col s12 l6 m12 map-container" style="height: 600px;">
                         <div id='map' style="width: 90%; height: 100%;"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="faqs">
+        <section class="faqs" id="faqs">
 
             <div class="container">
                 <div class="row">
@@ -436,7 +436,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
 
             <div class="container">
                 <div class="row">
@@ -542,6 +542,7 @@
 
 
 
+    <script src="dependencies/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="dependencies/materialize/js/materialize.min.js"></script>
     <script src="dependencies/siema/dist/siema.min.js"></script>
     <script src="js/script.js"></script>

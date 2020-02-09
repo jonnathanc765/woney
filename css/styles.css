@@ -139,10 +139,10 @@ header {
     width: 100%;
     max-width: 960px; }
   .services .l12 > .card {
-    border-radius: 45px;
-    -webkit-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75); }
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.75); }
     .services .l12 > .card h2 {
       color: #60A9B9;
       font-weight: 800;
@@ -347,11 +347,11 @@ header {
     text-align: left; }
   .faqs h2 {
     font-weight: 800;
-    font-size: 75px;
+    font-size: 50px;
     margin: 0; }
   .faqs h3 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0; }
   .faqs .collapsible {
     box-shadow: none;
@@ -395,9 +395,9 @@ header {
     font-weight: 500; }
   .contact .card {
     border-radius: 15px;
-    -webkit-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 21px 6px rgba(0, 0, 0, 0.75); }
+    -webkit-box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 21px -1px rgba(0, 0, 0, 0.75); }
     .contact .card .card-content form input, .contact .card .card-content form textarea {
       padding: 0 0 0 14px;
       color: #000;
