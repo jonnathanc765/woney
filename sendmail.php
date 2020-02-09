@@ -7,6 +7,7 @@
 
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
+    
     $mail->Host = 'mx1.hostinger.com';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
