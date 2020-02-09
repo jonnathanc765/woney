@@ -405,7 +405,8 @@ header {
       border-radius: 25px;
       border: none;
       font-size: 13px;
-      height: 35px; }
+      height: 35px;
+      width: 100%; }
       .contact .card .card-content form input:focus, .contact .card .card-content form textarea:focus {
         border: none;
         outline: none;
