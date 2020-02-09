@@ -1,0 +1,24 @@
+{
+  "name": "woney",
+  "version": "1.0.0",
+  "description": "Web de woney",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass --include-path scss sass/styles.scss css/styles.css",
+    "watch": "nodemon -e scss -x \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/jonnathanc765/woney.git"
+  },
+  "author": "Jonnathan Carrasco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/jonnathanc765/woney/issues"
+  },
+  "homepage": "https://gitlab.com/jonnathanc765/woney#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
+  }
+}
