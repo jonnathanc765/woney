@@ -49,6 +49,20 @@
                     max-height: 100px;
                     min-height: 60px;
                 }
+                button {
+                    background-color: #fff;
+                    border: 2px solid $indigo;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                    color: $indigo;
+                    font-weight: 600;
+                    transition: all .3s ease;
+                    &:hover {
+                        background-color: $indigo;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

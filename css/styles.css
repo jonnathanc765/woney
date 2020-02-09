@@ -188,12 +188,13 @@ header {
     position: relative;
     padding: 0;
     padding-top: 100px;
-    min-height: 620px;
+    min-height: 640px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column; }
     @media screen and (max-width: 767px) {
       .team .container > .row > .col {
+        min-height: 650px;
         padding-top: 10px; } }
     .team .container > .row > .col h3, .team .container > .row > .col h4, .team .container > .row > .col p {
       color: #fff;
@@ -211,7 +212,6 @@ header {
       padding: 20px;
       font-size: 14px;
       font-weight: 600;
-      margin-bottom: 20px;
       min-height: 200px; }
     .team .container > .row > .col .title-text {
       position: absolute;
@@ -224,7 +224,7 @@ header {
         .team .container > .row > .col .title-text {
           display: none; }
           .team .container > .row > .col .title-text.responsive {
-            display: block; } }
+            display: block !important; } }
       .team .container > .row > .col .title-text h2, .team .container > .row > .col .title-text h3 {
         text-align: center;
         color: #fff;
@@ -354,7 +354,7 @@ header {
     margin: 0; }
   .faqs h3 {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0; }
   .faqs .collapsible {
     box-shadow: none;
@@ -424,6 +424,18 @@ header {
       min-width: 100%;
       max-height: 100px;
       min-height: 60px; }
+    .contact .card .card-content form button {
+      background-color: #fff;
+      border: 2px solid #D35F40;
+      border-radius: 10px;
+      padding: 5px 20px;
+      color: #D35F40;
+      font-weight: 600;
+      transition: all .3s ease; }
+      .contact .card .card-content form button:hover {
+        background-color: #D35F40;
+        color: #fff;
+        cursor: pointer; }
 
 footer {
   background-color: #D35F40;
