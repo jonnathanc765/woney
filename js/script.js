@@ -52,6 +52,8 @@
     });
 
     function verifyForm() {
+
+      $('form .message').fadeOut();
       
       elements = $('form textarea, form input');
 
@@ -70,16 +72,22 @@
 
       $.ajax({
         data: {
-          name: "Holis"
+          name: $('#name').val(),
+          phone: $('#phone').val(),
+          email: $('#email').val(),
+          country: $('#country').val(),
+          message: $('#message').val(),
         },
         method: "POST",
         url: "sendmail.php",
       }).then(function(response) {
-        console.log(response);
+        
         $('form .progress').fadeOut();
+        $('form .message').text('Mensaje enviado exitosamente');
+        $('form .message').fadeIn();
       })
       .catch(function (err) {
-        console.log(err);
+        $('form .message').text('No se ha podido enviar tu mensaje');
         $('form .progress').fadeOut();
       });
 

@@ -4,22 +4,16 @@
     require 'vendor/autoload.php';
 
     $name  = $_POST['name'];
-
-    sleep(2);
-
-    echo $name;
-
-    die();
-
-    $email = $_POST['email'];
-    $message = $_POST['message'];
     $phone = $_POST['phone'];
+    $email = $_POST['email'];
     $country = $_POST['country'];
+    $message = $_POST['message'];
 
     $mail = new PHPMailer;
 
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
+    $mail->setLanguage('es');
 
     $mail->Host = 'smtp.mailtrap.io';
     $mail->Port = 587;
@@ -34,7 +28,18 @@
 
     // $mail->msgHTML(file_get_contents('message.html'), __DIR__);
 
-    $mail->AltBody = $message;
+    $body = "Nombre:  $name <br> 
+                Teléfono: $phone <br>
+                Correo: $email <br>
+                País: $country <br><br>
+                Mensaje: <br>
+                $message
+        ";
+
+    echo $body;
+
+    $mail->AltBody = $body;
+    $mail->Body = $body;
 
 
     if (!$mail->send()) {
