@@ -37,6 +37,10 @@
                         width: 70%;
                         font-weight: 600;
                         margin-bottom: 18px;
+                        transition: all .3s ease;
+                        &:hover {
+                            transform: scale(1.15);
+                        }
                     }
                     h4 {
                         font-weight: 700;

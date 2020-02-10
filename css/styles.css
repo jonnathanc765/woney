@@ -33,11 +33,14 @@ body {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 100; }
+  z-index: 100;
+  background: #fff;
+  padding: 6px 2px;
+  border-radius: 15px; }
   .glue a {
     font-size: 30px;
     color: #e19630;
-    padding: 2px 12px;
+    padding: 2px 8px;
     border: 5px solid #e19630;
     border-radius: 13px; }
 
@@ -86,6 +89,10 @@ header {
     @media screen and (max-width: 600px) {
       .about-us .row {
         display: block; } }
+    .about-us .row img {
+      transition: all .3s ease; }
+      .about-us .row img:hover {
+        transform: scale(1.15); }
   .about-us h2, .about-us h4 {
     text-align: center;
     color: #60A9B9; }
@@ -170,7 +177,10 @@ header {
         .services .l12 > .card .card .card-content img {
           width: 70%;
           font-weight: 600;
-          margin-bottom: 18px; }
+          margin-bottom: 18px;
+          transition: all .3s ease; }
+          .services .l12 > .card .card .card-content img:hover {
+            transform: scale(1.15); }
         .services .l12 > .card .card .card-content h4 {
           font-weight: 700;
           font-size: 22px; }
@@ -218,6 +228,10 @@ header {
       font-size: 14px;
       font-weight: 600;
       min-height: 200px; }
+    .team .container > .row > .col img {
+      transition: all .3s ease; }
+      .team .container > .row > .col img:hover {
+        transform: scale(1.15); }
     .team .container > .row > .col .title-text {
       position: absolute;
       top: 0;
