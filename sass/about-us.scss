@@ -9,6 +9,12 @@
         @media screen and (max-width: 600px) {
             display: block;
         }
+        img {
+            transition: all .3s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
     background-color: $light-blue;
     h2, h4 {
