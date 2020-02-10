@@ -19,7 +19,7 @@
 }
 
 .glue {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px; 
     z-index: 100;
@@ -39,6 +39,9 @@ header {
         top: 20px;
         right: 20px;
         z-index: 100;
+        img {
+            max-width: 180px;
+        }
     }
     .siema-slider {
         img {

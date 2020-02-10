@@ -66,4 +66,30 @@
             }
         }
     }
+    .coin-wallet-container {
+        margin-top: 15px;
+        min-height: 420px;
+        @media screen and (max-width: 480px) {
+            min-height: 400px;
+        }
+        @media screen and (max-width: 380px) {
+            min-height: 345px;
+        }
+        position: relative;
+        img {
+            position: absolute;
+        }
+        img.coin {
+            animation: move 0.5s ease-in-out alternate infinite;
+        }
+    }
 }
+
+@keyframes move {
+    to {
+        transform: translateY(-25px);
+    }
+    from {
+        transform: translateY(0px);
+    }
+  }
