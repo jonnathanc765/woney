@@ -3,8 +3,15 @@
     use PHPMailer\PHPMailer\PHPMailer;
     require 'vendor/autoload.php';
 
-    $email = $_POST['email'];
     $name  = $_POST['name'];
+
+    sleep(2);
+
+    echo $name;
+
+    die();
+
+    $email = $_POST['email'];
     $message = $_POST['message'];
     $phone = $_POST['phone'];
     $country = $_POST['country'];

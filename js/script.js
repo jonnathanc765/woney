@@ -41,7 +41,46 @@
     });
 
     M.AutoInit();
-    
+
     var scroll = new SmoothScroll('a[href*="#"]');
 
 
+    $('.send-mail').click(function () {
+
+      verifyForm();
+      
+    });
+
+    function verifyForm() {
+      
+      elements = $('form textarea, form input');
+
+      for (element of elements) {
+        if ($(element).val().trim() == "") {
+          alert('Debe llenar todos los campos correctamente');
+          return;
+        }
+      }
+      sendMail();
+    }
+
+    function sendMail () {
+
+      $('form .progress').fadeIn();
+
+      $.ajax({
+        data: {
+          name: "Holis"
+        },
+        method: "POST",
+        url: "sendmail.php",
+      }).then(function(response) {
+        console.log(response);
+        $('form .progress').fadeOut();
+      })
+      .catch(function (err) {
+        console.log(err);
+        $('form .progress').fadeOut();
+      });
+
+    }

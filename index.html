@@ -465,7 +465,15 @@
     
                                     <textarea placeholder="Descripción"></textarea>
 
-                                    <button type="submit">Enviar</button>
+                                    <div class="progress" style="display: none;">
+                                        <div class="indeterminate"></div>
+                                    </div>
+
+                                    <div class="align-center">
+                                        Mensaje enviado exitosamente
+                                    </div>
+
+                                    <button type="button" class="send-mail">Enviar</button>
                                 </form>
                             </div>
                         </div>
@@ -546,6 +554,7 @@
     <script src="dependencies/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="dependencies/materialize/js/materialize.min.js"></script>
     <script src="dependencies/siema/dist/siema.min.js"></script>
+    <script src="dependencies/jquery/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
     <script src="js/latin-countrys.js"></script>
