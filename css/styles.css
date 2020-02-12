@@ -56,6 +56,11 @@ header {
       max-width: 180px; }
   header .siema-slider img {
     width: 100%; }
+  header .siema-slider .secound-siema-slider {
+    width: 100%;
+    text-align: center; }
+    header .siema-slider .secound-siema-slider img {
+      width: 80%; }
   header .dots {
     margin-left: auto;
     margin-right: auto;
