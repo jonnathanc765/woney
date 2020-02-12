@@ -328,28 +328,37 @@ header {
     margin-bottom: 15px; }
   .countries .s3 {
     margin-top: 30px; }
-  .countries ul {
-    list-style: none;
-    padding: 0; }
-    @media screen and (max-width: 992px) {
-      .countries ul {
-        padding-left: 35px; } }
-    .countries ul li {
-      padding-left: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      margin: 15px 0px; }
-      .countries ul li:before {
-        content: "\f041";
-        /* FontAwesome Unicode */
-        font-family: FontAwesome;
-        display: inline-block;
-        margin-left: -1.3em;
-        /* same as padding-left set on li */
-        width: 1.3em;
-        /* same as padding-left set on li */
-        font-size: 20px;
-        color: #E19630; }
+  .countries .collapsible {
+    border: none;
+    box-shadow: none; }
+    .countries .collapsible .collapsible-header {
+      color: #E19630;
+      font-size: 18px; }
+    .countries .collapsible ul {
+      list-style: none;
+      padding: 0; }
+      @media screen and (max-width: 992px) {
+        .countries .collapsible ul {
+          padding-left: 35px; } }
+      .countries .collapsible ul li {
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 15px 0px;
+        transition: all .3s ease; }
+        .countries .collapsible ul li.hover {
+          font-size: 19px; }
+        .countries .collapsible ul li:before {
+          content: "\f041";
+          /* FontAwesome Unicode */
+          font-family: FontAwesome;
+          display: inline-block;
+          margin-left: -1.3em;
+          /* same as padding-left set on li */
+          width: 1.3em;
+          /* same as padding-left set on li */
+          font-size: 20px;
+          color: #E19630; }
   .countries .map-container {
     display: flex;
     justify-content: center;

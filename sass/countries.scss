@@ -19,27 +19,39 @@
     .s3 {
         margin-top: 30px;
     }
-    ul {
-        list-style: none;
-        padding: 0;
-        @media screen and (max-width: 992px) {
-            padding-left: 35px;
+    .collapsible {
+        border: none;
+        box-shadow: none;
+        .collapsible-header {
+            color: $orange;
+            font-size: 18px;
         }
-        li {
-            padding-left: 10px;
-            font-size: 20px;
-            font-weight: 600;
-            margin: 15px 0px;
-            &:before {
-                content: "\f041"; /* FontAwesome Unicode */
-                font-family: FontAwesome;
-                display: inline-block;
-                margin-left: -1.3em; /* same as padding-left set on li */
-                width: 1.3em; /* same as padding-left set on li */
-                font-size: 20px;
-                color: $orange;
+        ul {
+            list-style: none;
+            padding: 0;
+            @media screen and (max-width: 992px) {
+                padding-left: 35px;
             }
-
+            li {
+                padding-left: 10px;
+                font-size: 15px;
+                font-weight: 600;
+                margin: 15px 0px;
+                transition: all .3s ease;
+                &.hover {
+                    font-size: 19px;
+                }
+                &:before {
+                    content: "\f041"; /* FontAwesome Unicode */
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    margin-left: -1.3em; /* same as padding-left set on li */
+                    width: 1.3em; /* same as padding-left set on li */
+                    font-size: 20px;
+                    color: $orange;
+                }
+    
+            }
         }
     }
     .map-container {

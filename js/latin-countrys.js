@@ -5,6 +5,7 @@ var statesData ={
         "type":"Feature",
         "properties":{
           "density": 210461000,
+          "id": 1,
            "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
@@ -894,7 +895,8 @@ var statesData ={
         "type":"Feature",
         "properties":{
           "density": 125357000,
-           "scalerank":1,
+          "id": 2,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
            "sovereignt":"Mexico",
@@ -1650,6 +1652,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 17,
           "density": 30000000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -2096,7 +2099,8 @@ var statesData ={
         "type":"Feature",
         "properties":{ 
           "density": 49737000,
-           "scalerank":1,
+          "id": 3,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
            "sovereignt":"Colombia",
@@ -2575,7 +2579,8 @@ var statesData ={
           "density": 44723000,
            "scalerank":1,
            "featurecla":"Admin-0 country",
-           "labelrank":2,
+          "id": 4,
+          "labelrank":2,
            "sovereignt":"Argentina",
            "sov_a3":"ARG",
            "adm0_dif":0,
@@ -3140,7 +3145,8 @@ var statesData ={
         "type":"Feature",
         "properties":{ 
           "density": 6675000,
-           "scalerank":1,
+          "id": 8,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":6,
            "sovereignt":"El Salvador",
@@ -3297,6 +3303,7 @@ var statesData ={
         "type":"Feature",
         "properties":{ 
           "density": 33362000,
+          "id": 10,
           "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":2,
@@ -3680,7 +3687,8 @@ var statesData ={
           "density": 9087000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
-           "labelrank":5,
+          "id": 5,
+          "labelrank":5,
            "sovereignt":"Honduras",
            "sov_a3":"HND",
            "adm0_dif":0,
@@ -3982,6 +3990,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 9,
           "density": 6494000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -4268,6 +4277,7 @@ var statesData ={
         "type":"Feature",
         "properties":{ 
           "density": 210461000,
+          "id": 6,
           "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":4,
@@ -4476,6 +4486,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 11,
           "density": 18880000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -5015,6 +5026,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 12,
           "density": 17545000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -5232,6 +5244,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 15,
           "density": 4190000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -5518,7 +5531,8 @@ var statesData ={
         "type":"Feature",
         "properties":{ 
           "density": 5032000,
-           "scalerank":1,
+          "id": 14,
+          "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":5,
            "sovereignt":"Costa Rica",
@@ -5738,6 +5752,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 16,
           "density": 3512000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -5899,6 +5914,7 @@ var statesData ={
      { 
         "type":"Feature",
         "properties":{ 
+          "id": 13,
           "density": 17170000,
           "scalerank":1,
            "featurecla":"Admin-0 country",
@@ -6109,6 +6125,7 @@ var statesData ={
         "type":"Feature",
         "properties":{ 
           "density": 10315000,
+          "id": 7,
           "scalerank":1,
            "featurecla":"Admin-0 country",
            "labelrank":5,

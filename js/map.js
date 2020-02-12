@@ -1,6 +1,8 @@
         
     var map = L.map('map').setView([-15.5, -70], 3);
 
+    var hover_map = undefined;
+
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 15,
         id: 'mapbox/light-v9'
@@ -28,14 +30,7 @@
 
     // get color depending on population density value
     function getColor(d) {
-     return d > 150000000 ? '#800026' :
-            d > 120000000  ? '#BD0026' :
-            d > 45000000  ? '#E31A1C' :
-            d > 40000000  ? '#FC4E2A' :
-            d > 10000000   ? '#FD8D3C' :
-            d > 5000000   ? '#FEB24C' :
-            d > 2000000   ? '#FED976' :
-                        '#FFEDA0';
+        return '#E19630';
     }
 
     function style (feature) {
@@ -51,6 +46,10 @@
 
     function highlightFeature(e) {
         var layer = e.target;
+
+        hover_map_id = e.target.feature.properties.id;
+
+        document.querySelector('#place-' + hover_map_id).classList.add('hover');
 
         layer.setStyle({
             weight: 2,
@@ -69,6 +68,11 @@
     var geojson;
 
     function resetHighlight(e) {
+
+        hover_map_id = e.target.feature.properties.id;
+
+        document.querySelector('#place-' + hover_map_id).classList.remove('hover');
+
         geojson.resetStyle(e.target);
         info.update();
     }
