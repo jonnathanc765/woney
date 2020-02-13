@@ -63,6 +63,31 @@ header {
     text-align: center; }
     header .siema-slider .secound-siema-slider img {
       width: 80%; }
+  header .siema-slider div.item {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px; }
+    header .siema-slider div.item.pallete {
+      position: relative; }
+      header .siema-slider div.item.pallete .dots-pallete {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        header .siema-slider div.item.pallete .dots-pallete span {
+          width: 20px;
+          height: 20px;
+          margin: .5rem 0;
+          border: 0;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          background: transparent;
+          outline: 0; }
+          header .siema-slider div.item.pallete .dots-pallete span.active {
+            background-color: #fff; }
   header .dots {
     margin-left: auto;
     margin-right: auto;

@@ -25,6 +25,9 @@
     }
   }
 
+  
+
+
 
     const slider = new SiemaWithDots({
       selector: '.siema-slider',
@@ -97,3 +100,18 @@
       });
 
     }
+
+  
+    var color = 2;
+
+    $('.dots-pallete span').click(function () {
+      $('.dots-pallete span').each(function () {
+        $(this).css("background-color", 'transparent');
+      });
+      $(this).css("background-color", "#fff");
+      $('.item.pallete').css('background-image', `url(img/banner-${color}.png)`)
+      color++;
+      if (color == 6) {
+        color = 2;
+      }
+    });
