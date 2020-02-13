@@ -33,11 +33,8 @@
                 $message
         ";
 
-    echo $body;
-
     $mail->AltBody = $body;
     $mail->Body = $body;
-
 
     if (!$mail->send()) {
         echo 'Mailer Error: ' . $mail->ErrorInfo;
