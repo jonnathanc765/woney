@@ -262,11 +262,34 @@ header {
 .proccess {
   background-color: #e5e6e7;
   padding: 30px 0 40px 0; }
+  .proccess .col {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .proccess h2 {
     text-align: center;
     font-weight: 800;
     font-size: 40px;
     color: #333333; }
+  .proccess img {
+    display: none; }
+  @media screen and (max-width: 550px) {
+    .proccess img.sm {
+      display: block; } }
+  .proccess img.md {
+    display: none; }
+    @media screen and (max-width: 790px) {
+      .proccess img.md {
+        display: block; } }
+    @media screen and (max-width: 550px) {
+      .proccess img.md {
+        display: none; } }
+  .proccess img.lg {
+    display: none;
+    max-width: 1140px; }
+    @media screen and (min-width: 791px) {
+      .proccess img.lg {
+        display: block; } }
 
 .benefits {
   position: relative;

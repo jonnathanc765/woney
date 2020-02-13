@@ -1,10 +1,41 @@
 .proccess {
     background-color: $light-blue;
     padding: 30px 0 40px 0;
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     h2 {
         text-align: center;
         font-weight: 800;
         font-size: 40px;
         color: rgb(51, 51, 51);
+    }
+    img {
+        display: none;
+    }
+    img.sm {
+        @media screen and (max-width: 550px) {
+            display: block;
+        }
+    }
+
+    img.md {
+        display: none;
+        @media screen and (max-width: 790px) {
+            display: block;
+        }
+        @media screen and (max-width: 550px) {
+            display: none;
+        }
+    }
+
+    img.lg {
+        display: none;
+        max-width: 1140px;
+        @media screen and (min-width: 791px) {
+            display: block;
+        }
     }
 }
