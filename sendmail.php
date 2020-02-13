@@ -14,16 +14,17 @@
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
     $mail->setLanguage('es');
-    $mail->Host = 'woney.money';
-    $mail->Port = 465;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'info@woney.money';
-    $mail->Password = 'IOn[Y)b$fUiC';
+    $mail->Username = 'shopify765@gmail.com';
+    $mail->Password = '5552017j';
+    // $mail->Password = 'IOn[Y)b$fUiC';
 
-    $mail->setFrom('jonnathan.c.765@gmail.com', 'Información Woney');
+    $mail->setFrom('info@woney.money', 'Información Woney');
     $mail->addAddress($email, $name);
 
-    $mail->Subject = 'Información desde Woney';
+    $mail->Subject = 'Informacion desde Woney';
 
     $body = "Nombre:  $name <br> 
                 Teléfono: $phone <br>
