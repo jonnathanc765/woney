@@ -100,17 +100,24 @@
       });
 
     }
+    var banner = 2;
+    setInterval(function() {
+      $('.item.pallete').css('background-image', `url(img/banner-${banner}.png)`);
+      banner++;
+      if (banner == 6) {
+        banner = 2;
+      }
+    }, 1000);
 
   
     var color = 2;
 
-    console.log($('.dots-pallete span'));
     $('.dots-pallete span').click(function () {
+      clearInterval();
       changeDot(this);
     });
 
     function changeDot (self) {
-      console.log('change it');
       $('.dots-pallete span').each(function () {
         $(this).css("background-color", 'transparent');
       });
@@ -121,3 +128,4 @@
         color = 2;
       }
     }
+
