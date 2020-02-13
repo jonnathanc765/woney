@@ -545,6 +545,12 @@ footer {
       footer .links ul a:hover {
         color: #fff;
         text-decoration: none; }
+  footer .description {
+    padding: 20px 0 0 0 !important;
+    text-align: center; }
+    footer .description img {
+      width: 80%;
+      max-width: 200px; }
   footer .social ul li {
     display: flex;
     flex-direction: row;
