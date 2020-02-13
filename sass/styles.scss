@@ -14,13 +14,15 @@ $light-blue: #e5e6e7;
 
 body {
   position: relative;
+  main {
+    overflow: hidden;
+  }
 }
 
 
 .siema {
   margin: 1rem 0;
 }
-
 
 
 .dots__item--active {
