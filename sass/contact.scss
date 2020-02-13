@@ -62,6 +62,16 @@
                         color: #fff;
                         cursor: pointer;
                     }
+                    &[disabled=''] {
+                        color: rgb(87, 87, 87);
+                        border: 2px solid rgb(87, 87, 87);
+                        &:hover {
+                            color: rgb(87, 87, 87);
+                            background-color: #fff;
+                            cursor: not-allowed;
+                            border: 2px solid rgb(87, 87, 87);
+                        }
+                    }
                 }
             }
         }

@@ -14,19 +14,16 @@
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
     $mail->setLanguage('es');
-
-    $mail->Host = 'smtp.mailtrap.io';
-    $mail->Port = 587;
+    $mail->Host = 'woney.money';
+    $mail->Port = 465;
     $mail->SMTPAuth = true;
-    $mail->Username = '6f515f07b3be9c';
-    $mail->Password = '1dea3b29c155a6';
+    $mail->Username = 'info@woney.money';
+    $mail->Password = 'IOn[Y)b$fUiC';
 
-    $mail->setFrom('info@woney.com', 'Información Woney');
+    $mail->setFrom('jonnathan.c.765@gmail.com', 'Información Woney');
     $mail->addAddress($email, $name);
 
     $mail->Subject = 'Información desde Woney';
-
-    // $mail->msgHTML(file_get_contents('message.html'), __DIR__);
 
     $body = "Nombre:  $name <br> 
                 Teléfono: $phone <br>

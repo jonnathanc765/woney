@@ -69,6 +69,7 @@
     function sendMail () {
 
       $('form .progress').fadeIn();
+      $('form button').attr('disabled');
 
       $.ajax({
         data: {
@@ -83,10 +84,14 @@
       }).then(function(response) {
         
         $('form .progress').fadeOut();
+        $('form button').removeAttr('disabled');
+
         $('form .message').text('Mensaje enviado exitosamente');
         $('form .message').fadeIn();
       })
       .catch(function (err) {
+        $('form button').removeAttr('disabled');
+
         $('form .message').text('No se ha podido enviar tu mensaje');
         $('form .progress').fadeOut();
       });

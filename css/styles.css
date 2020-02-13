@@ -494,6 +494,14 @@ header {
         background-color: #D35F40;
         color: #fff;
         cursor: pointer; }
+      .contact .card .card-content form button[disabled=''] {
+        color: #575757;
+        border: 2px solid #575757; }
+        .contact .card .card-content form button[disabled='']:hover {
+          color: #575757;
+          background-color: #fff;
+          cursor: not-allowed;
+          border: 2px solid #575757; }
   .contact .coin-wallet-container {
     margin-top: 15px;
     min-height: 420px;
