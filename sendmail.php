@@ -20,7 +20,7 @@
     $mail->Username = 'soporte@woney.money';
     $mail->Password = 'Woney123$';
     // $mail->Password = 'IOn[Y)b$fUiC';
-
+    echo $mail->Username;
     $mail->setFrom('soporte@woney.money', 'Información Woney');
     $mail->addAddress($email, $name);
 
