@@ -14,14 +14,14 @@
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
     $mail->setLanguage('es');
-    $mail->Host = 'smtp.gmail.com';
-    $mail->Port = 587;
+    $mail->Host = 'smtp.zoho.com';
+    $mail->Port = 465;
     $mail->SMTPAuth = true;
-    $mail->Username = 'shopify765@gmail.com';
-    $mail->Password = '5552017j';
+    $mail->Username = 'soporte@woney.money';
+    $mail->Password = 'Woney123$';
     // $mail->Password = 'IOn[Y)b$fUiC';
 
-    $mail->setFrom('info@woney.money', 'Información Woney');
+    $mail->setFrom('soporte@woney.money', 'Información Woney');
     $mail->addAddress($email, $name);
 
     $mail->Subject = 'Informacion desde Woney';
