@@ -1,7 +1,7 @@
 <?php
+    require 'vendor/autoload.php';
 
     use PHPMailer\PHPMailer\PHPMailer;
-    require 'vendor/autoload.php';
 
     $name  = $_POST['name'];
     $phone = $_POST['phone'];
@@ -14,6 +14,7 @@
     echo "Estamos enviando, un momento por favor";
 
 
+    $destination = "soporte@woney.money";
 
     $mail             = new PHPMailer();
     $mail->SMTPDebug = 3;
@@ -24,9 +25,10 @@
     $mail->Username   = "soporte@woney.money";
     $mail->Password   = "Woney123$";
     $mail->SMTPSecure = 'ssl';
-    $mail->SetFrom('soporte@woney.money', 'Soporte de Woney');
-    $mail->AddReplyTo("soporte@woney.money","Woney Support");
+    $mail->SetFrom($destination, 'Soporte de Woney');
+    $mail->AddReplyTo($destination,"Woney Support");
     $mail->Subject    = "Información desde Woney Web";
+    $mail->AddAddress($destination);
 
     $body = "Nombre:  $name <br> 
                 Teléfono: $phone <br>
@@ -35,28 +37,8 @@
                 Mensaje: <br>
                 $message
         ";
-
     $mail->AltBody    = $body;
     $mail->MsgHTML($body);
-    $address = "soporte@woney.money";
-    $mail->AddAddress('soporte@woney.money');
-
-    // $mail->isSMTP();
-    // $mail->SMTPDebug = 2;
-    // $mail->setLanguage('es');
-    // $mail->Host = 'smtp.zoho.com';
-    // $mail->Port = 465;
-    // $mail->SMTPAuth = true;
-    // $mail->Username = 'soporte@woney.money';
-    // $mail->Password = 'Woney123$';
-    // // $mail->Password = 'IOn[Y)b$fUiC';
-    // echo $mail->Username;
-    // $mail->setFrom('soporte@woney.money', 'Información Woney');
-    // $mail->addAddress($email, $name);
-
-    // $mail->Subject = 'Informacion desde Woney';
-    // $mail->AltBody = $body;
-    // $mail->Body = $body;
 
 
     if (!$mail->send()) {
