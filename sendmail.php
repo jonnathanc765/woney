@@ -23,7 +23,7 @@
     $mail->Port       = 587;
     $mail->Username   = "info@midoctor24h.com";
     $mail->Password   = "Midoctor24h/2009.";
-    $mail->SMTPSecure = 'ssl';
+    $mail->SMTPSecure = 'tls';
     $mail->SetFrom('soporte@woney.money', 'Soporte de Woney');
     $mail->AddReplyTo("soporte@woney.money","Woney Support");
     $mail->Subject    = "Información desde Woney Web";
