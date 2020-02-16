@@ -19,11 +19,11 @@
     $mail->SMTPDebug = 3;
     $mail->IsSMTP();
     $mail->SMTPAuth   = true;
-    $mail->Host       = "smtp-relay.gmail.com";
-    $mail->Port       = 587;
-    $mail->Username   = "info@midoctor24h.com";
-    $mail->Password   = "Midoctor24h/2009.";
-    $mail->SMTPSecure = 'tls';
+    $mail->Host       = "woney.money";
+    $mail->Port       = 465;
+    $mail->Username   = "soporte@woney.money";
+    $mail->Password   = "Woney123$";
+    $mail->SMTPSecure = 'ssl';
     $mail->SetFrom('soporte@woney.money', 'Soporte de Woney');
     $mail->AddReplyTo("soporte@woney.money","Woney Support");
     $mail->Subject    = "Información desde Woney Web";
