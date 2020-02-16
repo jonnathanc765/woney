@@ -20,7 +20,7 @@
     $mail->IsSMTP();
     $mail->SMTPAuth   = true;
     $mail->Host       = "smtp-relay.gmail.com";
-    $mail->Port       = 465;
+    $mail->Port       = 587;
     $mail->Username   = "info@midoctor24h.com";
     $mail->Password   = "Midoctor24h/2009.";
     $mail->SMTPSecure = 'ssl';
