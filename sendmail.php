@@ -38,8 +38,8 @@
 
     $mail->AltBody    = $body;
     $mail->MsgHTML($body);
-    $address = $email;
-    $mail->AddAddress($email);
+    $address = "soporte@woney.money";
+    $mail->AddAddress('soporte@woney.money');
 
     // $mail->isSMTP();
     // $mail->SMTPDebug = 2;
