@@ -14,7 +14,7 @@
     echo "Estamos enviando, un momento por favor";
 
 
-    $destination = "soporte@woney.money";
+    $destination = "jonnathan.c.765@gmail.com";
 
     $mail             = new PHPMailer();
     $mail->SMTPDebug = 3;
