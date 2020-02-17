@@ -11,10 +11,10 @@
 
     $mail = new PHPMailer;
 
-    echo "Estamos enviando, un momento por favor";
+    echo "Estamos enviando, un momento por favor <br>";
 
 
-    $destination = "jonnathan.c.765@gmail.com";
+    $destination = "soporte@woney.money";
 
     $mail             = new PHPMailer();
     $mail->SMTPDebug = 3;
@@ -24,7 +24,9 @@
     $mail->Port       = 465;
     $mail->Username   = "soporte@woney.money";
     $mail->Password   = "Woney123$";
-    $mail->SMTPSecure = 'ssl';
+    $mail->SMTPSecure = 'tls';
+    $mail->CharSet = 'UTF-8';
+    $mail->Encoding = 'base64';
     $mail->SetFrom($destination, 'Soporte de Woney');
     $mail->AddReplyTo($destination,"Woney Support");
     $mail->Subject    = "Información desde Woney Web";
@@ -40,10 +42,11 @@
     $mail->AltBody    = $body;
     $mail->MsgHTML($body);
 
+    echo "Ahi vamos <br>";
 
     if (!$mail->send()) {
-        echo 'Ha ocurrido un error ' . $mail->ErrorInfo;
+        echo 'Ha ocurrido un error <br>' . $mail->ErrorInfo;
     } else {
-        echo 'El mensaje se ha enviado con éxito!';
+        echo 'El mensaje se ha enviado con éxito! <br>';
 
     }
