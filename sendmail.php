@@ -20,10 +20,10 @@
     $mail->SMTPDebug = 3;
     $mail->IsSMTP();
     $mail->SMTPAuth   = true;
-    $mail->Host       = "woney.money";
-    $mail->Port       = 465;
-    $mail->Username   = "soporte@woney.money";
-    $mail->Password   = "Woney123$";
+    $mail->Host       = "smtp.gmail.com";
+    $mail->Port       = 587;
+    $mail->Username   = "shopify765@gmail.com";
+    $mail->Password   = "5552017j";
     $mail->SMTPSecure = 'tls';
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
